@@ -39,6 +39,21 @@ function activeCurrentSection() {
   }
 }
 
+//ARROW UP TO TOP
+const sectionOfTop = document.querySelector('#about')
+const arrowUpButton = document.querySelector('#arrowUpButton')
+const sectionHeight = sectionOfTop.offsetHeight
+
+function arrowUpAppear() {
+  const checkpoint = window.pageYOffset
+  if (checkpoint > sectionHeight) {
+    arrowUpButton.classList.add('show')
+  } else {
+    arrowUpButton.classList.remove('show')
+  }
+}
+
 document.addEventListener('scroll', () => {
   activeCurrentSection()
+  arrowUpAppear()
 })
