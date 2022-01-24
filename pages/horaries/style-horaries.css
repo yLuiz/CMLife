@@ -215,6 +215,38 @@ section {
   background-color: #cdcdcd;
 }
 
+/*------  BUTTON TO TOP ------*/
+
+.buttonTop {
+  position: fixed;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #018a8f;
+  bottom: 5vh;
+  right: 3vw;
+  transition: 0.4s;
+}
+
+.buttonTop img {
+  position: absolute;
+  width: 25px;
+  opacity: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.4s;
+}
+
+.buttonTop:hover img {
+  opacity: 100%;
+}
+
+.buttonTop:hover {
+  transform: translateY(-5px);
+}
+
 /*------  MEDIA QUERIES ------*/
 
 @media (max-width: 1024px) {
